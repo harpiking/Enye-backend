@@ -55,7 +55,7 @@ app.get("/api/rates", function(req, res) {
           }
         });
 
-        await res.status(200).json(setObj)
+        await res.status(200).send(setObj)
       } catch (error) {
         console.error(error.message);
       };
